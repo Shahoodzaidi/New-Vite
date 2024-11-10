@@ -16,31 +16,57 @@ flex-wrap: wrap;
     
   }
 }
-.button{
-  overflow: hidden;
-  position: relative;
 
-  
+
+#btn{
+  background-color: black;
+overflow: hidden;
+
+
 }
 
 
- /* nav {
-  padding: 2vw 0vw;
-  width: 100%;
-  background-color: red;
-  display: flex;
-  align-items: center;
-  position: relative;
-  z-index: 100;
-  justify-content: space-between;
-} */
 
-/* #nav-part2 {
-  display: flex;
-  align-items: center;
-  gap: 1vw;
-} */
- 
+#btn h5{
+
+z-index: 9999;
+color: white;
+
+padding: .6vw .6vw;
+
+position: relative;
+}
+#btn h5::after{
+  content: '';
+  height: 100%;
+  width: 100%;
+  padding: 800px 800px;
+  position: absolute;
+  left: -140%;
+  top: 3vw;
+  transition: all ease-in-out .3s;
+  z-index: -9999;
+  border-radius: 500px 900px;
+
+  background-color: rgb(70, 153, 51);
+
+}
+#btn h5:hover::after{
+  border-radius: 400px 300px;
+  padding: 600px 400px; 
+  position: absolute;
+  font-weight: 900;
+  top: -2vw;
+  bottom: 0;
+  transition: all ease-in-out .8s;
+  z-index: -9999;
+  color: black;
+  border-radius: 50px 300px;
+  background-color: rgb(70, 153, 51);
+
+
+}
+
 
 ul li  {
   padding: 10px 20px;
@@ -48,7 +74,7 @@ ul li  {
   border-radius: 50px;
   font-weight: 500;
 
-  transition: all ease 0.4s;
+  transition: all ease 0.8s;
   position: relative;
   font-size: 18px;
   z-index: -9999;
@@ -62,21 +88,21 @@ ul li a::after {
   position: absolute;
   height: 100%;
   width: 100%;
-z-index: -9999;
-color: black;
-  background-color: rebeccapurple;
+  z-index: -9999;
+  color: black;
+  background-color: rgb(70, 153, 51);
   left: 0;
   bottom: -100%;
   border-radius: 50%;
-  transition: all ease 0.4s;
+  transition: all ease-in-out 0.2s;
 }
 
 ul li a:hover::after {
   bottom: 0;
   z-index: -9999;
-
-color: black;
-background-color: rebeccapurple;
+  transition: all ease-in-out .3s;
+  color: black;
+  background-color: rgb(70, 153, 51);
   border-radius: 0;
 }
 
